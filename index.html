@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { margin: 0; text-align: center; padding-top : 1rem}
+        #container {border: 2px solid black; width: 100%; height: 10rem; display: grid; grid-template-columns: repeat(2,50%);grid-column: 2;}
+        .button-play {text-align: center;}
+        .submit {text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="button-play">
+        <button id="pierre">pierre</button>
+        <button id="papier">papier</button>
+        <button id="ciseau">ciseau</button>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3,33%); padding-top: 2rem;">
+        <div id="container">
+            <div id="container-joueur">
+                <h4>Le joueur joue : </h4>
+                <p id="playerIn"></p>
+            </div>
+            <div id="container-ordi">
+                <h4>L'ordi a joué : </h4>
+                <p id="ordiIn"></p>
+            </div>
+        </div>
+    </div>
+    <div id="resultat">
+        <p id="resTxt"></p>
+    </div>
+    <div class="submit">
+        <h4>Le resultat est : </h4>
+        <button id="submit">submit</button>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
